@@ -1,0 +1,17 @@
+@use "../variables/variables";
+@use "../mixin/mixin";
+
+.cards {
+  $this: &;
+  display: grid;
+  gap: 50px;
+  justify-content: center;
+}
+.card {
+  $this: &;
+  width: max-content;
+  &_thumbnail {
+    max-width: 375px;
+    aspect-ratio: 4/3;
+  }
+}
